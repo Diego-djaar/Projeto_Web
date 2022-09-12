@@ -1,3 +1,15 @@
+:root{
+    --cor_principal: white;
+    --cor_secundaria: black;
+    --tema_escuro: inline;
+    --tema_claro: none;
+}
+
+body{
+    color: var(--cor_secundaria);
+    background-color: var(--cor_principal);
+}
+
 .Texto {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
@@ -5,5 +17,27 @@
     
 }
 .Espaco{
-    margin-top: 100px;
+    margin-top: 50px;
+}
+
+.Mudar_tema{
+    color: var(--cor_principal);
+    background-color: var(--cor_secundaria);
+    display: var(--tema_escuro);
+    border-radius: 9px;
+    border: none;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 9px;
+    vertical-align: -20px;
+    transition: transform 0.5s, margin 0.5s;
+}
+.Mudar_tema_claro{
+    display: var(--tema_claro)
+}
+.Mudar_tema:hover{
+    transform: scale(1.27);
+    margin-left: 27px;
+    margin-right: 18px;
 }

@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="br">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projeto Web</title>
-    <!-- arquivos css utilizados -->
+    <!-- Arquivos css utilizados -->
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="surpresa.css" />
   </head>
+
   <body>
+    <!-- Paragrafos de introdução -->
     <div class="Texto">
-      <p>Ola.</p>
+      <p>Olá.</p>
+
       <p>
         Sou Diego, estudante de Ciência da Computação no Centro de Informática
         da UFPE.
       </p>
 
-      <img src="/foto" alt="minha foto" />
+      <!-- Minha foto -->
+      <img src="/foto.jpg" width="300" alt="minha foto" />
 
       <p>
         Estou no 1º período e adoro a cadeira de Álgebra Linear (embora seja
@@ -24,68 +29,89 @@
       </p>
 
       <p>
-        Também adoro programação. Eis os meus github(s):
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://github.com/Dhayson"
-          >pessoal</a
-        >
+        Também adoro programação. Eis os meus GitHub(s):
+        <!-- Links para os githubs -->
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/Dhayson">pessoal</a>
         e
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://github.com/Diego-djaar"
-          >da faculdade </a
-        >.
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/Diego-djaar">da faculdade </a>.
       </p>
 
       <p>
         Um dos projetos é um jogo feito para a Game Jaaj 7 (competição de criar
         jogos):
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://github.com/Dhayson/Game-Jaaj-7"
-        >
+
+        <!-- Links para o jogo (repositório e download) -->
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/Dhayson/Game-Jaaj-7">
           GitHub
         </a>
         &nbsp
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://dhayson.itch.io/escolha-seu-inimigo"
-        >
+        <a target="_blank" rel="noopener noreferrer" href="https://dhayson.itch.io/escolha-seu-inimigo">
           Jogo no itch.io
         </a>
       </p>
+
     </div>
+
+    <!-- Vídeo do LoL -->
     <div class="Texto">
       <p class="Espaco"></p>
+
       <p>
         Em relação a hobbies, gosto de jogar o (in)famoso League of Legends.
       </p>
-      <iframe
-        width="500"
-        height="315"
-        src="https://www.youtube.com/embed/MbCFs3bDd_A"
-      >
+
+      <iframe width="500" height="315" src="https://www.youtube.com/embed/MbCFs3bDd_A">
         Pentakill de Pyke
       </iframe>
     </div>
 
+    <!-- Vídeo do Cubo Mágico -->
     <div class="Texto">
-      <p>
-        Também curto resolver 
-      </p>
+      <p class="Espaco"></p>
+
+      <p>Também curto resolver Cubos Mágicos:</p>
+
+      <iframe width="500" height="315" src="https://www.youtube.com/embed/Cubo_Magico">
+        Resolvendo Cubo Mágico
+      </iframe>
     </div>
-    <div>
-      <button
-        class="Surpresa"
-        onclick="window.location.href='Naruto/naruto.html'"
-      >
+
+    <!-- Encerramento -->
+    <div class="Texto">
+      <p class="Espaco"></p>
+
+      <p>E por hoje é só.</p>
+    </div>
+
+    <!-- Easter Eggs -->
+    <div class="Texto">
+      <p class="Espaco"></p>
+
+      <p>Easter Eggs:</p>
+
+      <!-- Supresinha especial só para os monitores de IC -->
+      <button class="Surpresa" onclick="window.location.href='Naruto/naruto.html'">
         Um presente para os monitores
       </button>
+
+      <!-- Botão para colocar o tema escuro -->
+      <button class="Mudar_tema" onclick="document.documentElement.style.setProperty('--cor_principal', '#000000');
+        document.documentElement.style.setProperty('--cor_secundaria', '#FFFFFF');
+        document.documentElement.style.setProperty('--tema_escuro', 'none')
+        document.documentElement.style.setProperty('--tema_claro', 'inline')">
+        Tema Escuro
+      </button>
+
+      <!-- Botão para colocar o tema claro (só aparece quando o tema é escuro) -->
+      <button class="Mudar_tema Mudar_tema_claro" onclick="document.documentElement.style.setProperty('--cor_principal', '#FFFFFF');
+        document.documentElement.style.setProperty('--cor_secundaria', '#000000');
+        document.documentElement.style.setProperty('--tema_escuro', 'inline')
+        document.documentElement.style.setProperty('--tema_claro', 'none')">
+        Tema Claro
+      </button>
+
+      <p class="Espaco"></p>
     </div>
   </body>
+
 </html>

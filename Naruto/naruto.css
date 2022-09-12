@@ -1,21 +1,21 @@
 /* Cor do fundo */
-.Fundo{
-    background-color: brown;
+.Fundo {
+  background-color: brown;
 }
-.Texto{
-    color: orange;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+.Texto {
+  color: orange;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
 }
 .Titulo {
-    font-size: 30px;
+  font-size: 30px;
 }
 /* Botão para voltar */
-.Voltar{
-    border: none;
-    font-size: 40px;
-    transition: color 1s;
+.Voltar {
+  border: none;
+  font-size: 40px;
+  transition: color 1s;
 }
-.Hyperlink:hover{
-    color: blue;
+.Hyperlink:hover {
+  color: blue;
 }
